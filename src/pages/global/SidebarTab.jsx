@@ -7,23 +7,11 @@ import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ComputerOutlinedIcon from "@mui/icons-material/ComputerOutlined";
 import BookOnlineOutlinedIcon from "@mui/icons-material/BookOnlineOutlined";
-import CardMembershipOutlinedIcon from "@mui/icons-material/CardMembershipOutlined";
-import DiscountSharpIcon from "@mui/icons-material/DiscountSharp";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/BookmarkAddedOutlined";
-import ChatBubbleOutlineOutlined from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
-import Diversity3OutlinedIcon from "@mui/icons-material/Diversity3Outlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import PersonOffOutlinedIcon from "@mui/icons-material/PersonOffOutlined";
-import SupervisedUserCircleOutlinedIcon from "@mui/icons-material/SupervisedUserCircleOutlined";
-import DoorFrontOutlinedIcon from "@mui/icons-material/DoorFrontOutlined";
-import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
-import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import StoreOutlinedIcon from "@mui/icons-material/StoreOutlined";
 import { LineAxisOutlined } from "@mui/icons-material";
 
 // Define the Item component
@@ -206,15 +194,15 @@ const SidebarTab = () => {
             <Item
               title="Nhân Viên"
               to="/sale-report"
-              icon={<ArticleOutlinedIcon />}
+              icon={<PersonOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
               title="Khách Hàng"
-              to="/gift-card-report"
-              icon={<ArticleOutlinedIcon />}
+              to="/customer"
+              icon={<PersonOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -222,7 +210,7 @@ const SidebarTab = () => {
             <Item
               title="Sản Phẩm"
               to="/invoice"
-              icon={<ReceiptOutlinedIcon />}
+              icon={<ArticleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -236,9 +224,9 @@ const SidebarTab = () => {
             />
 
             <Item
-              title="Danh mục sản phẩm"
+              title="Quản Lý Cửa Hàng"
               to="/statictis"
-              icon={<LineAxisOutlined />}
+              icon={<StoreOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
