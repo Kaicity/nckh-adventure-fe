@@ -1,4 +1,4 @@
-import { Box, Toolbar, Typography, useTheme, Button, Hidden, menuItemClasses, MenuItem, Icon } from "@mui/material";
+import { Box, useTheme, Button } from "@mui/material";
 import { tokens } from "../../theme";
 import { MockDataCustomer } from "../../data/mockData";
 import Header from "../../components/Header";
@@ -6,14 +6,11 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import { useState } from "react";
 import Form from "./CustomerFormData";
 import DataTable from "../../components/DataTable";
-import { GridMenuIcon, GridToolbar } from "@mui/x-data-grid";
+import { GridToolbar } from "@mui/x-data-grid";
 import ModalDialog from "../../components/ModalDialog";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
-import { enableCursor } from "@fullcalendar/core/internal";
-import { columnMenuStateInitializer } from "@mui/x-data-grid/internals";
-import { toHaveFocus } from "@testing-library/jest-dom/matchers";
 
 const Customer = () => {
   const theme = useTheme();
@@ -74,7 +71,7 @@ const Customer = () => {
       headerAlign: "left",
       align: "left",
       sortable: false,
-      type: 'null',
+      type: "null",
       disableColumnMenu: true,
       renderCell: (params) => (
         <Box
